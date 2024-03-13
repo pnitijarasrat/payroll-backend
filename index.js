@@ -30,7 +30,7 @@ mongoose
     .connect(mongoDBUrl)
     .then(() => {
         console.log('connected!')
-        app.listen("https://13.228.225.19", () => {
+        app.listen(PORT, () => {
             console.log(`App is listening to ${PORT}`)
         })
     })
